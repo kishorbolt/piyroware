@@ -9,11 +9,14 @@ export const metadata: Metadata = {
   title: "Contact PIYROWARE | Connect via WhatsApp & Email",
   description:
     "Get in touch with PIYROWARE for software development and artificial intelligence solutions. Connect directly via WhatsApp (+91 94887 93023) or email.",
+  alternates: {
+    canonical: "/contact",
+  },
   openGraph: {
     title: "Contact PIYROWARE | Connect via WhatsApp & Email",
     description:
       "Get in touch with PIYROWARE for software development and artificial intelligence solutions. Connect directly via WhatsApp (+91 94887 93023) or email.",
-    url: "https://piyroware.com/contact",
+    url: "https://www.piyroware.com/contact",
     siteName: "PIYROWARE",
     type: "website",
     images: [
@@ -24,6 +27,12 @@ export const metadata: Metadata = {
         alt: "PIYROWARE Logo",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact PIYROWARE | Connect via WhatsApp & Email",
+    description:
+      "Get in touch with PIYROWARE for software development and artificial intelligence solutions. Connect directly via WhatsApp (+91 94887 93023) or email.",
   },
 };
 

@@ -5,11 +5,14 @@ export const metadata: Metadata = {
   title: "About PIYROWARE | Our Vision & Mission",
   description:
     "We are a technology-driven company focused on building modern software, intelligent digital solutions and innovative technology experiences.",
+  alternates: {
+    canonical: "/about",
+  },
   openGraph: {
     title: "About PIYROWARE | Our Vision & Mission",
     description:
       "We are a technology-driven company focused on building modern software, intelligent digital solutions and innovative technology experiences.",
-    url: "https://piyroware.com/about",
+    url: "https://www.piyroware.com/about",
     siteName: "PIYROWARE",
     type: "website",
     images: [

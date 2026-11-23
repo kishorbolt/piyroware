@@ -5,11 +5,14 @@ export const metadata: Metadata = {
   title: "Why Choose PIYROWARE | Technology & Innovation",
   description:
     "Technology with purpose. Solutions with impact. Discover why organizations partner with PIYROWARE for modern software development and intelligent AI solutions.",
+  alternates: {
+    canonical: "/why-us",
+  },
   openGraph: {
     title: "Why Choose PIYROWARE | Technology & Innovation",
     description:
       "Technology with purpose. Solutions with impact. Discover why organizations partner with PIYROWARE for modern software development and intelligent AI solutions.",
-    url: "https://piyroware.com/why-us",
+    url: "https://www.piyroware.com/why-us",
     siteName: "PIYROWARE",
     type: "website",
     images: [

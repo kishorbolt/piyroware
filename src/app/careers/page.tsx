@@ -5,11 +5,14 @@ export const metadata: Metadata = {
   title: "Careers at PIYROWARE | Join Our Technical Team",
   description:
     "Explore career opportunities at PIYROWARE. Apply directly for software development and artificial intelligence engineering roles.",
+  alternates: {
+    canonical: "/careers",
+  },
   openGraph: {
     title: "Careers at PIYROWARE | Join Our Technical Team",
     description:
       "Explore career opportunities at PIYROWARE. Apply directly for software development and artificial intelligence engineering roles.",
-    url: "https://piyroware.com/careers",
+    url: "https://www.piyroware.com/careers",
     siteName: "PIYROWARE",
     type: "website",
     images: [

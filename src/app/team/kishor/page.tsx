@@ -9,6 +9,29 @@ import { User, Mail, ArrowLeft, ArrowUpRight, ShieldCheck, Code2, BrainCircuit }
 export const metadata: Metadata = {
   title: "Kishor | Technical Profile | PIYROWARE",
   description: "Technical profile and engineering focus of Kishor at PIYROWARE.",
+  alternates: {
+    canonical: "/team/kishor",
+  },
+  openGraph: {
+    title: "Kishor | Technical Profile | PIYROWARE",
+    description: "Technical profile and engineering focus of Kishor at PIYROWARE.",
+    url: "https://www.piyroware.com/team/kishor",
+    siteName: "PIYROWARE",
+    type: "profile",
+    images: [
+      {
+        url: "/piyroware-logo-optimized.png",
+        width: 512,
+        height: 512,
+        alt: "PIYROWARE Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kishor | Technical Profile | PIYROWARE",
+    description: "Technical profile and engineering focus of Kishor at PIYROWARE.",
+  },
 };
 
 export default function KishorProfilePage() {

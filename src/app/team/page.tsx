@@ -12,11 +12,14 @@ export const metadata: Metadata = {
   title: "Our Team | PIYROWARE — Software & Artificial Intelligence",
   description:
     "Meet the people behind PIYROWARE — building software and intelligent digital solutions with purpose.",
+  alternates: {
+    canonical: "/team",
+  },
   openGraph: {
     title: "Our Team | PIYROWARE — Software & Artificial Intelligence",
     description:
       "Meet the people behind PIYROWARE — building software and intelligent digital solutions with purpose.",
-    url: "https://piyroware.com/team",
+    url: "https://www.piyroware.com/team",
     siteName: "PIYROWARE",
     type: "website",
     images: [
@@ -27,6 +30,12 @@ export const metadata: Metadata = {
         alt: "PIYROWARE Logo",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Team | PIYROWARE — Software & Artificial Intelligence",
+    description:
+      "Meet the people behind PIYROWARE — building software and intelligent digital solutions with purpose.",
   },
 };
 

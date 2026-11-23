@@ -18,25 +18,25 @@ export const metadata: Metadata = {
   authors: [{ name: "PIYROWARE" }],
   creator: "PIYROWARE",
   publisher: "PIYROWARE",
-  metadataBase: new URL("https://piyroware.com"),
+  metadataBase: new URL("https://www.piyroware.com"),
   alternates: {
     canonical: "/",
   },
   icons: {
-    icon: "/piyroware-logo.png",
-    apple: "/piyroware-logo.png",
+    icon: "/piyroware-logo-optimized.png",
+    apple: "/piyroware-logo-optimized.png",
   },
   openGraph: {
     title: "PIYROWARE — Software & AI Technology Company",
     description:
       "We Build Software. We Engineer Intelligence. PIYROWARE creates modern software and AI solutions designed to solve complex problems.",
-    url: "https://piyroware.com",
+    url: "https://www.piyroware.com",
     siteName: "PIYROWARE",
     images: [
       {
-        url: "/piyroware-logo.png",
-        width: 1024,
-        height: 1024,
+        url: "/piyroware-logo-optimized.png",
+        width: 512,
+        height: 512,
         alt: "PIYROWARE Logo",
       },
     ],
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "PIYROWARE — Software & AI Technology Company",
     description:
       "PIYROWARE creates modern software and AI solutions designed to solve complex problems, simplify experiences, and help ideas become reality.",
-    images: ["/piyroware-logo.png"],
+    images: ["/piyroware-logo-optimized.png"],
   },
   robots: {
     index: true,
