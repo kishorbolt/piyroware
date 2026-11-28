@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Code2, BrainCircuit, ShieldCheck, Zap } from "lucide-react";
 
@@ -64,9 +65,9 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal"
             >
-              <strong className="text-white font-semibold">PIYROWARE</strong> is a software development
-              and artificial intelligence company focused on creating practical, modern, and scalable digital
-              solutions.
+              <strong className="text-white font-semibold">PIYROWARE</strong> (PIYROWARE Technologies) is a premier
+              technology company specializing in bespoke software development and artificial intelligence engineering.
+              We build scalable digital solutions tailored to high-impact operational needs.
             </motion.p>
 
             <motion.p
@@ -76,10 +77,35 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-sm sm:text-base text-slate-400 leading-relaxed"
             >
-              We specialize in engineering robust web applications, intelligent automation systems, and
-              cloud-ready backend architectures. By combining technical discipline with modern frameworks,
-              we help businesses and founders transform complex ideas into reliable, high-performance software.
+              Through dedicated <strong className="text-slate-200 font-medium">PIYROWARE Software Development</strong> practices,
+              we engineer robust web platforms, resilient cloud APIs, and intuitive digital interfaces.
+              Our <strong className="text-slate-200 font-medium">PIYROWARE AI Solutions</strong> integrate predictive modeling,
+              computer vision, and cognitive automation to empower modern enterprises.
             </motion.p>
+
+            {/* Direct crawlable links to Founder and Director profiles */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.25 }}
+              className="pt-2 text-xs text-slate-300 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-white/[0.08]"
+            >
+              <span className="text-slate-400 font-mono">Leadership:</span>
+              <Link
+                href="/team/kishor"
+                className="text-blue-400 hover:text-blue-300 underline font-medium"
+              >
+                Mr. Kishor G (CEO & Founder)
+              </Link>
+              <span className="text-slate-600">•</span>
+              <Link
+                href="/team/mohammed-afhaan-n"
+                className="text-blue-400 hover:text-blue-300 underline font-medium"
+              >
+                Mr. Mohammed Afhaan N (Director)
+              </Link>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 15 }}

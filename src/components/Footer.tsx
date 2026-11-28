@@ -184,6 +184,17 @@ export default function Footer() {
                   </button>
                 </li>
               ))}
+              <li>
+                <button
+                  onClick={() => scrollToSection("seo-visibility")}
+                  className="hover:text-blue-300 transition-colors cursor-pointer text-left flex items-center gap-1.5"
+                >
+                  <span>SEO & Search Visibility</span>
+                  <span className="text-[9px] font-mono px-1.5 py-0.2 bg-blue-500/20 text-blue-300 rounded border border-blue-500/30">
+                    SEO
+                  </span>
+                </button>
+              </li>
             </ul>
           </div>
 

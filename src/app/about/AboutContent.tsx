@@ -24,6 +24,8 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
+import StaffCard from "@/components/StaffCard";
+import { STAFF_MEMBERS } from "@/data/staff";
 
 const PRACTICE_AREAS = [
   {
@@ -393,7 +395,34 @@ export default function AboutContent() {
           </div>
         </section>
 
-        {/* 5. CTA Section to Why Us or Contact */}
+        {/* 5. Leadership & Management */}
+        <section className="py-20 sm:py-28 relative border-t border-white/[0.06] bg-[#070B14]/40">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mb-12 sm:mb-16">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-6 h-[2px] bg-blue-500" />
+                <span className="text-xs uppercase tracking-widest text-blue-400 font-semibold font-mono">
+                  Corporate Leadership
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                Leadership & Management
+              </h2>
+              <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+                Guided by executive technology leadership dedicated to engineering excellence,
+                operational integrity, and client success.
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+              {STAFF_MEMBERS.map((member, idx) => (
+                <StaffCard key={member.id} member={member} index={idx} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 6. CTA Section to Why Us or Contact */}
         <section className="py-20 relative border-t border-white/[0.06]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative rounded-3xl bg-gradient-to-br from-[#090E1B] via-[#0E172E] to-[#090E1B] border border-white/[0.1] p-8 sm:p-12 overflow-hidden shadow-2xl">

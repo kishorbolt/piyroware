@@ -21,6 +21,7 @@ const NAV_ITEMS: NavItem[] = [
   { name: "Expertise", href: "/#expertise", sectionId: "expertise" },
   { name: "Process", href: "/#process", sectionId: "process" },
   { name: "Why Us", href: "/why-us", isStandaloneRoute: true },
+  { name: "Team", href: "/team", isStandaloneRoute: true },
   { name: "Contact", href: "/#contact", sectionId: "contact" },
 ];
 

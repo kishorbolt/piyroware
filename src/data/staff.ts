@@ -1,7 +1,9 @@
 export interface StaffMember {
   id: string;
   name: string;
-  role: string;
+  roleTitle?: string; // e.g. "CEO & FOUNDER", "DIRECTOR"
+  role: string;       // e.g. "Chief Executive Officer & Founder, PIYROWARE."
+  designation?: string;
   image?: string;
   bio?: string;
   skills?: string[];
@@ -10,25 +12,29 @@ export interface StaffMember {
   email?: string;
   twitter?: string;
   website?: string;
+  profileUrl?: string;
 }
 
 /**
- * Staff directory data for PIYROWARE.
- * 
- * To add real team members in the future, add objects matching the StaffMember interface below.
- * Images should be placed in the `/public` folder (e.g. `/staff/alex-vance.jpg`).
- * 
- * Example structure:
- * {
- *   id: "staff-01",
- *   name: "Jane Doe",
- *   role: "Senior AI Engineer",
- *   image: "/staff/jane-doe.jpg",
- *   bio: "Specializing in deep learning architectures, computer vision, and autonomous pipelines.",
- *   skills: ["PyTorch", "Python", "Computer Vision", "TensorFlow"],
- *   linkedin: "https://linkedin.com/in/janedoe",
- *   github: "https://github.com/janedoe",
- *   email: "jane@piyroware.com",
- * }
+ * Official Leadership & Management Directory of PIYROWARE.
+ * Reflects verified company leadership as designated.
  */
-export const STAFF_MEMBERS: StaffMember[] = [];
+export const STAFF_MEMBERS: StaffMember[] = [
+  {
+    id: "kishor-g",
+    name: "Mr. Kishor G",
+    roleTitle: "CEO & FOUNDER",
+    role: "Chief Executive Officer & Founder, PIYROWARE.",
+    designation: "Chief Executive Officer & Founder, PIYROWARE.",
+    image: "/staff/kishor-g.webp",
+    profileUrl: "/team/kishor",
+  },
+  {
+    id: "mohammed-afhaan-n",
+    name: "Mr. Mohammed Afhaan N",
+    roleTitle: "DIRECTOR",
+    role: "Director, PIYROWARE.",
+    designation: "Director, PIYROWARE.",
+    profileUrl: "/team/mohammed-afhaan-n",
+  },
+];

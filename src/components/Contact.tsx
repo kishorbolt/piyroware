@@ -11,6 +11,7 @@ import {
   User,
   FileText,
   MessageSquare,
+  MessageCircle,
   ExternalLink,
   Info,
 } from "lucide-react";
@@ -387,10 +388,10 @@ export default function Contact() {
                 <div className="space-y-3 pt-2">
                   <button
                     type="submit"
-                    className="w-full py-4 rounded-xl text-base font-semibold text-white bg-[#25D366] hover:bg-[#20bd5a] shadow-[0_0_25px_rgba(37,211,102,0.35)] hover:shadow-[0_0_35px_rgba(37,211,102,0.55)] transition-all duration-300 flex items-center justify-center gap-2.5 cursor-pointer"
+                    className="w-full py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-500 hover:via-indigo-500 hover:to-violet-500 active:scale-[0.99] shadow-[0_0_25px_rgba(59,130,246,0.35)] hover:shadow-[0_0_35px_rgba(99,102,241,0.5)] transition-all duration-300 flex items-center justify-center gap-2.5 cursor-pointer border border-blue-400/30"
                   >
-                    <FaWhatsapp className="w-5 h-5" />
-                    <span>Send Enquiry via WhatsApp</span>
+                    <MessageCircle className="w-5 h-5 text-white" />
+                    <span>Send</span>
                   </button>
 
                   <div className="flex items-center justify-center gap-2 text-xs text-slate-400">

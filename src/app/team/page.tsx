@@ -6,19 +6,19 @@ import CustomCursor from "@/components/CustomCursor";
 import StaffCard from "@/components/StaffCard";
 import { STAFF_MEMBERS } from "@/data/staff";
 import Link from "next/link";
-import { Users2, ArrowUpRight, ShieldCheck, Mail } from "lucide-react";
+import { Users2, ArrowUpRight, Mail, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Team | PIYROWARE — Software & Artificial Intelligence",
+  title: "Leadership & Management | PIYROWARE — Software & Artificial Intelligence",
   description:
-    "Meet the people behind PIYROWARE — building software and intelligent digital solutions with purpose.",
+    "Meet the executive leadership of PIYROWARE: Mr. Kishor G (Chief Executive Officer & Founder) and Mr. Mohammed Afhaan N (Director). Driving software engineering and AI innovation.",
   alternates: {
     canonical: "/team",
   },
   openGraph: {
-    title: "Our Team | PIYROWARE — Software & Artificial Intelligence",
+    title: "Leadership & Management | PIYROWARE — Software & Artificial Intelligence",
     description:
-      "Meet the people behind PIYROWARE — building software and intelligent digital solutions with purpose.",
+      "Meet the executive leadership of PIYROWARE: Mr. Kishor G (Chief Executive Officer & Founder) and Mr. Mohammed Afhaan N (Director). Driving software engineering and AI innovation.",
     url: "https://www.piyroware.com/team",
     siteName: "PIYROWARE",
     type: "website",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Team | PIYROWARE — Software & Artificial Intelligence",
+    title: "Leadership & Management | PIYROWARE — Software & Artificial Intelligence",
     description:
-      "Meet the people behind PIYROWARE — building software and intelligent digital solutions with purpose.",
+      "Meet the executive leadership of PIYROWARE: Mr. Kishor G (Chief Executive Officer & Founder) and Mr. Mohammed Afhaan N (Director).",
   },
 };
 
@@ -65,27 +65,27 @@ export default function TeamPage() {
               <div className="flex items-center gap-2 mb-3">
                 <span className="w-6 h-[2px] bg-blue-500" />
                 <span className="text-xs uppercase tracking-widest text-blue-400 font-semibold font-mono">
-                  People of PIYROWARE
+                  Leadership & Management
                 </span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-                Our Team
+                Our Leadership & Team
               </h1>
 
               <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-                Meet the people behind PIYROWARE — building software and intelligent
-                digital solutions with purpose.
+                Meet the executive leadership of PIYROWARE — directing software engineering,
+                artificial intelligence innovation, and digital technology solutions with purpose.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Staff Directory Section */}
+        {/* Executive Directory Section */}
         <section className="pb-24 sm:pb-32 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {hasStaff ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 {STAFF_MEMBERS.map((member, idx) => (
                   <StaffCard key={member.id} member={member} index={idx} />
                 ))}
@@ -112,29 +112,6 @@ export default function TeamPage() {
                     AI specialists, and digital architects. Verified credentials,
                     specializations, and direct channels will be published here.
                   </p>
-
-                  <div className="mt-6 flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs font-mono text-slate-400">
-                    <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-                    <span>Directory Status: Staging Updates</span>
-                  </div>
-
-                  <div className="mt-8 pt-6 border-t border-white/[0.06] w-full flex flex-col sm:flex-row items-center justify-center gap-3">
-                    <Link
-                      href="/#contact"
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold shadow-lg shadow-blue-600/25 transition-all duration-200 cursor-pointer"
-                    >
-                      <span>Connect with Our Team</span>
-                      <ArrowUpRight className="w-4 h-4" />
-                    </Link>
-
-                    <a
-                      href="mailto:piyroware@gmail.com"
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] text-sm font-medium transition-all duration-200"
-                    >
-                      <Mail className="w-4 h-4 text-blue-400" />
-                      <span>piyroware@gmail.com</span>
-                    </a>
-                  </div>
                 </div>
               </div>
             )}
